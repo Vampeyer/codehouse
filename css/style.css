@@ -391,7 +391,6 @@ img {
     background-image: url(/img/1.webp);
     background-size:cover;
  
-    padding: .5em;
     margin: .30rem;
     border-radius: 25% ;
     margin: 10rem, 14rem, 1rem 3rem ;
@@ -495,7 +494,7 @@ a:hover, a:active {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center; 
-    margin: 12px auto 24px;
+    margin: 12px 24px;
     display: block;
     width: fit-content;
 }

@@ -1,0 +1,770 @@
+/* 	
+=============================================================================
+NORMALIZE normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
+=============================================================================
+*/
+
+
+
+/* 	
+=============================================================================
+ PRIMARY STYLES
+=============================================================================
+*/
+/*  Fonts  */
+
+
+/*  Fonts  */
+
+
+
+/* Base
+=====================================================
+
+*/  
+
+
+.html {
+
+    background-image: url(/img/Background.jpg);
+}
+/*
+
+
+- START of nav bar - 
+
+===================== */
+
+.menubox {
+    float:right;
+    justify-content: space-around;
+    background-color: #1b1b27;
+    background-image: url(/img/fire2.jpg);
+    background-color: #000000;
+    background-size: 130%;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    border: #000000 solid .2rem ;
+
+}
+
+.mainnavbar{
+    width: 100%;
+
+}
+
+.mainnavbar>* { 
+    margin: 0;
+    list-style:none;
+    
+    
+}
+
+
+.mainnavbar>body{
+    font-family: "Smooth", Arial, Helvetica, sans-serif;
+    
+} 
+ .mainnavbar>nav {
+    height:80px;
+    width: 100%;
+    background:  #1b1b27;;
+}
+
+label.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: #1b1b27;
+    padding: 0 100px;
+    line-height: 80px;
+    font-family: "Smooth",  Arial, Helvetica, sans-serif;
+    
+}
+
+nav ul {
+
+    flex-direction: column;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-flex;
+    margin: 0 8px;
+    line-height: 40px;
+    padding: 1rem , .7rem ;
+}
+nav a{
+    color: rgb(255, 0, 0);
+    font-size: 24px;
+    font-family: "stylish", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+
+    padding: 7px 10px;
+    border-radius: 3px;
+    margin: 0 .5rem;
+
+}
+a.active,a:hover {
+    border: 1px solid #1b1b27;
+    transition: .5s;
+}
+
+
+
+
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+}
+
+
+
+@media screen and ( min-width:909px){
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and ( max-width:909px) {
+   
+    nav ul {
+
+        height: 8vh;
+        background: #29326a;
+        top: 80px;
+        left: 0;
+        text-align: center;
+
+    }
+    nav li {
+        display: inline-block;
+        margin: 50px 0;
+        line-height: 10px;
+    }
+
+    nav a {
+        font-size :20px;
+    }
+ a.active,a:hover {
+        border: 2px solid #e2400f ;
+        color: #e21d0f; 
+     }
+    .list {
+        display:none
+        
+    }
+    
+    .list {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        height:125% ;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+.list {
+    display: none;
+    background-color: #000000;
+    padding: 1.5rem .5rem;
+}
+
+
+@media screen and  (max-width:932px){}
+.label>span {
+    font-size: large;
+    float: right;
+}
+
+a.active,a:hover {
+    border: 2px solid #bd0808 ;
+    color: #ff0000; 
+ }
+
+
+
+    
+@media screen and (max-width: 1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul {
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+
+
+    a.active,a:hover {
+        border: 2px solid #e20f0f ;
+        color: #e20f0f; 
+     }
+
+}
+
+/*     END of Nav bar        */
+
+/*/@media (max-width:932px ){
+    .logo, .list {
+        display: none;
+    }
+@media (max-width:)
+} 
+*/
+
+
+/*   END of nav bar    */  
+
+
+
+/*  //////////////  Sample write above ^  /////////////////////// */ 
+
+
+
+
+
+
+
+
+body , html {
+    padding:0 ;
+    margin: 0;    
+}
+
+
+/* drop down menu   */    
+
+/* Layout
+========================================================================== */
+
+
+/* Media Screen   */
+/* (media screens go at the end )   */
+/* =================================== */ 
+
+
+
+
+
+
+/*   MEDIA SCREEN HERE (or at the end) */ /*@media screen { min-width: } */
+
+
+.main-logo > span {
+    font-family: 'Stylish' ,'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+    border: 3em 4em; 
+    border-color: rgb(172, 66, 243);
+    color: #e20f0f;
+}
+
+.lightblue {
+
+    color: #da0000;
+}
+
+.asideheader 
+
+{ 
+   
+    flex-direction: row;
+    font-family: 'Stylish', Arial, Helvetica, sans-serif;
+
+}
+.asideheader table {
+    padding-right: 7rem;
+}
+
+.mainintro {
+    font-family: "Stylish" , Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    padding: auto;
+    border-style: double;
+    border-color: #5e0000;
+    border-radius: .5rem; 
+    border-radius: 15%  ;
+    margin-bottom: 500px;
+    display: flex;
+    flex:auto
+}   
+
+.mainintro > img > 
+{
+    margin-top :100px;
+
+}
+
+
+.header-container {
+    
+    background-image: url(/img/1.webp);
+    padding: 8px 0;
+     margin:auto ; 
+     border: 4rem ;
+}
+
+.header-content {
+    color: #49ccc1;
+    max-width: 1200px;
+    font-size: 14px;
+    align-items: center;
+    padding: 12px;
+    margin: 0;
+    border: #5e0000;
+}
+
+.hero-container { 
+    display: block;
+    background-image: url(/img/Background.jpg); 
+    background-size: cover;
+    background-size:cover;
+    padding: 0;
+    margin: 0 0 0 0rem;
+    border: solid 1.2rem;
+}
+
+.hero-content {
+    width: 100%;
+    text-align: center; 
+    margin: 0, 0, 0px, 0 ;
+    font-family:  "Stylish",Arial, Helvetica, sans-serif;
+    display:grid;
+    flex-direction: row;
+    
+    
+}
+
+
+
+.aboutme-container {
+    font-family: 'smooth' , Arial, Helvetica, sans-serif;
+    background: #e5e5e9;
+    
+    flex-direction: col;
+    justify-content: space-between;
+    align-items: center;
+    
+    font-stretch: expanded;
+    font-size: 110%;
+    padding: 2rem;
+    
+}
+
+
+
+.aboutme-content {
+    background-image: url(/img/1.webp);
+    background-size:100% ;
+    padding: 1.4rem;
+    align-items: center;
+    justify-content:space-evenly;
+    border-color: #ff0000;
+    border: 2rem;
+    margin: 10rem, 14rem, 1rem 3rem ;
+  
+}
+
+
+
+img {
+
+    border-color: #cf1e07d8;
+    border-style:solid;
+    border-radius: 7%;
+    background-image: url(/img/1.webp);
+    background-size:cover;
+ 
+    padding: .5em;
+    margin: .30rem;
+    border-radius: 25% ;
+    margin: 10rem, 14rem, 1rem 3rem ;
+    max-width:  100%;
+    height: auto;
+
+    
+        
+} 
+
+.aboutme-content > image {
+    object-fit: scale-down;
+}
+
+.projects-container {
+    background: #232443;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0;
+    
+}
+
+.projects-content {
+    color: #07b3a4;
+    width: 100%;
+    max-width: 1000px;
+
+    padding: 12px;
+}
+
+.projects-item { 
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.footer-container {
+    background: #e5e5e9;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 1px;
+}
+
+.footer-content {
+    font-size: 1
+    color: #8d0505f6;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    font-family: "smooth", Arial, Helvetica, sans-serif;
+}
+
+/* Links and Link Buttons
+========================================================================== */
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    
+}
+
+a:focus {
+    
+}
+a:hover, a:active {
+
+}
+
+/* .hero-container .btn, .hero-container .btn:visited  {
+    width: 100%;
+    max-width: 260px;
+    background: chartreuse;
+    color: #F1F1F1;
+    border: 2px solid chartreuse;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 12px auto 24px;
+    display: block;
+} */
+
+.hero-content .bttn, .hero-content .btn:visited  {
+    width: 100%;
+  
+    background: rgb(0, 0, 0);
+    color:  #ffffffd7 ;
+    border: 2px solid #2de7ff;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-family:  'Stylish', 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center; 
+    margin: 12px auto 24px;
+    display: block;
+    width: fit-content;
+}
+
+.hero-content .btn:focus {
+    background: red;
+    color: rgb(10, 19, 30);
+    border: 2px solid #333333;
+}
+.hero-content .btn:hover, .hero-content .btn:active {
+    background: #333333;
+    color:orange;
+    border: 2px solid #2de7ff;
+}
+
+.btn, .btn:visited  {
+    width: 100%;
+    max-width: 120px;
+    background: rgb(30, 213, 226);
+    color: white;
+    border: 2px solid rgb(16, 101, 107);
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-family: 'Stylish' 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 12px 0 24px;
+    display: block;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+    background: #74b44a;
+    color: #F1F1F1;
+    border: 2px solid #74b44a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Typography
+========================================================================== */
+
+.main-logo {
+    font-family: 'Stylish' 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F1F1F1;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+}
+/*  */
+
+.hero-content h1 {
+    font-family: 'Stylish' 'Roboto Condensed', sans-serif;
+    font-size: 22px;
+    color: rgb(253, 0, 0);
+    line-height: 1;
+    margin: 4rem 8px 24px 16px;
+    padding: 3em, .5em,3em, .5em;
+    text-transform: uppercase;
+    text-shadow: #000000;
+    text-decoration:dashed #000000; 
+    background-color: #000000; 
+    background-size:cover;
+    display: inline-flex;
+    align-content: space-between; 
+    justify-content: center;
+
+
+}
+/* Middle text in box  */
+.hero-content p {
+    font-family: 'Stylish',  'Cabin', sans-serif;
+    font-size: 14px;
+    color: #da0202;
+    line-height: 1.5;
+    margin: 3rem;
+    padding: .2rem;
+}
+
+
+
+
+section h2 {
+    font-family: 'Stylish', 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color:#27e29a;
+    
+}
+
+section h3 {
+    font-family: 'Stylish' 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #27e29a;
+}
+
+section h4 {
+    font-family: 'Stylish ','Roboto Condensed', sans-serif;
+    font-size: 18px;
+    color: #27e29a;
+}
+
+section p {
+    font-family: 'Stylish' 'Cabin', sans-serif;
+    line-height: 1.5;
+    padding: .2rem;
+    font-size:larger;
+    color: #da0202;
+}
+
+
+/* Lists and Navigation
+========================================================================== */
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.mobile-nav span a {
+    font-size: 26px;
+    padding: 8px;
+    color: #b10a0a;
+
+}
+
+.mobile-nav span a:hover {
+    color: #74b44a;
+}
+
+footer {
+  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Images and Videos
+========================================================================== */
+
+
+
+@font-face {
+    font-family: "Stylish";
+        src: url(/fonts/costura.woff) format('woff');     
+}
+@font-face {
+    font-family: "Smooth";
+    src: url(/fonts/kittytext.woff) format('woff') ;
+
+}
+
+/* 	
+=============================================================================
+ MEDIA QUERIES
+=============================================================================
+*/
+
+
+@media screen and (min-width: 320px)  { 
+    .aboutme-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1.4rem;
+        }
+        .footer-content{
+            font-size: x-small;
+        }
+        
+    }
+
+
+
+    
+@media screen and (min-width: 480px) {
+
+    .aboutme-content {
+      display: flex;
+      flex-direction: column;
+      justify-content:flex-start
+      padding: 1.4rem;
+    }
+    .aboutme-container {
+        columns: 2;
+    }
+
+    .footer-content{
+        font-size: small;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 512px) {
+
+      .aboutme-content {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around ; 
+        padding: 1.4rem;
+
+        }
+        .footer-content{
+            font-size: medium;
+        }
+        
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .aboutme-content {
+      display: flex;
+      flex-direction: column;
+      justify-content:space-around
+      padding: 1.4rem;
+    }
+    .aboutme-container {
+        
+        font-size: x-large;
+    }
+
+    .footer-content{
+        font-size:large;
+    }
+
+
+    .hero-content h1 {
+        font-family: 'Stylish' 'Roboto Condensed', sans-serif;
+        font-size: 32px;
+        color: #e00000;
+        text-emphasis-color: rgb(6, 180, 6);
+        line-height: 1;
+        margin: 4rem 8px 24px 16px;
+        padding: 3em, .5em,3em, .5em;
+        text-transform: uppercase;
+        text-shadow: #2de7ff;
+        
+} 
+}
+/* 	
+=============================================================================
+ Hi my name is messy css , please refractor me  !
+=============================================================================
+*/
+
+
+
+
+
+
+
+
+
+
+

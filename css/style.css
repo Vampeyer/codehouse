@@ -482,8 +482,6 @@ a:hover, a:active {
 } */
 
 .hero-content .bttn, .hero-content .btn:visited  {
-    width: 100%;
-  
     background: rgb(0, 0, 0);
     color:  #ffffffd7 ;
     border: 2px solid #2de7ff;
@@ -496,7 +494,7 @@ a:hover, a:active {
     text-align: center; 
     margin: 12px 24px;
     display: block;
-    width: fit-content;
+
 }
 
 .hero-content .btn:focus {

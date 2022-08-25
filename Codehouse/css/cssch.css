@@ -1,0 +1,438 @@
+
+/* Global stuff  */ 
+
+html {
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	padding:rem;
+} 
+
+
+/* Header  */ 
+
+header{ 
+
+	border: solid rgb(0, 129, 0) .3rem ;
+	padding: .3rem;
+	background-color:#0f9b6c;
+}
+
+header h3 {
+	background-color: #5fcf80;
+	display: flex;
+	justify-items: flex-s;
+
+}
+
+.headerContainer{
+  background-color: #0f9b6c;
+
+} 
+
+
+.headerContainer h3 {
+	font-family: "Signature";
+
+}
+
+.headerH3container {
+
+	padding-top: 2em;
+	display:flex;
+	background-size: contain;	
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+}
+
+.headerContainer img {
+	margin-right: 10;
+}
+
+
+
+.headerContainer img{
+	border: double 7px rgb(9, 182, 9);
+	border-radius: 20%;
+	margin-left: 8%;
+	margin-top: 5%;
+	margin-right: 3%;
+	
+}
+.headerContainer a:hover  { 
+	border: none;
+	border-color: transparent;
+}
+
+
+.headerContainer > h3 {
+
+	font-family: "Signature" 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	padding: .5rem;
+	border: double green .2rem;
+	margin: .5rem .3rem;
+	font-weight: normal;
+	font-size: 250%;
+
+
+	
+}
+
+
+
+
+/*  Top done    */ 
+
+/*  Text below header     */
+
+.mainTextTop { 
+	border: #066623 dashed 2px;
+	margin-top: 1%;
+	padding: 3%;
+	font-size: large;
+}
+
+.mainTextTop  aside , .mainTextTop p{
+
+	font-size: large;
+}
+
+
+
+
+.htmlList p {
+	padding-right: 5%;
+}
+
+.linksTitle h5, .linksTitle a {
+	font-family:  Arial ; 
+	font-size: large;  
+	text-decoration: none;	
+}
+
+.linksTitle ul {
+	text-decoration: none;
+	
+}
+
+
+
+p a {
+	text-decoration: none;
+	text-size-adjust: 110%;
+}
+
+/*   text in top   */
+
+
+
+
+/*List menu Start     */ 
+
+
+.linksTitle, .linkstitle{
+	font-family: "mighty";
+	font-size: 250%;
+}
+
+
+
+.listMenu , .listMenu nav, .listMenu li{ 
+
+	padding: 1%;
+	border: double green .1rem;
+	background-color: #5fcf80;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bolder;
+
+
+}
+
+
+.listMenu ul ul li {
+	padding-top: 5px;
+	border: #066623 solid;
+	margin-top: 5%;
+	padding-right: 20%;
+	font-size: small;
+	padding-left: 20%;
+}
+.listMenu ul li a {
+	display: flex;
+	justify-content: center;
+	border: #066623 solid 8px ;
+	border-collapse: collapse;
+
+	
+}
+
+
+		/*  TREEHOUSES COLOR  = #5fcf80 */ 
+		/*   - NOW IT BELONGS TO US -  */
+
+.htmlList li{
+	padding: .4rem;
+	border: double green .2rem;
+	margin:.35rem; 
+	}
+.htmlList , .cssList ,.jsList {
+	margin-left: -2.75rem;
+	display: block;
+	justify-content: center;
+	align-items: center;
+   
+}
+
+
+
+/*   */ 
+
+.htmlList a , .cssList a, .jsList a{
+	text-decoration: none;
+	color: #000000; 
+	padding-top: 3px ;
+	padding-bottom: 3px;
+	font-style: normal;
+
+}
+.htmlList ul a:active{ 
+
+	padding:7%;
+	padding-top: 10px;
+	
+
+}
+
+.cssList li , .linksTitle{
+	
+	padding: .2rem;
+	border: double green .2rem;
+	margin:.35rem; 
+}
+
+.jsList li {
+	padding: .2rem;
+	border: double green .2rem;
+	margin:.35rem; 
+	padding-bottom: 4px;	
+}
+
+.jsList h4 {
+
+	padding: 3px;
+}
+	
+
+
+
+h5 {
+	font-size: large;
+
+
+}
+
+
+
+/* Footer   */ 
+
+.footerContainer .footerContent {
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	border: #066623 dotted .7rem;
+	border-radius: 20%;
+	border-bottom-left-radius: 10%;
+
+	font-family: "fancy", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: bolder;
+	font-size: 200%;
+	margin-right: 3px;
+
+}
+
+footer p {
+	margin-right: 10%;
+	margin-left: 55px;
+	
+}
+
+
+
+
+/* Buttons?   */ 
+
+
+a:active,a:hover {
+	border: 2px solid green ;
+	color: #000000; 
+	padding: .5rem ;
+	font-style: normal;
+
+	transition: 500ms;
+	margin-bottom: 4% ;
+	margin-top: 2%;
+	padding: 2px;
+
+
+}
+
+
+
+ article.linksTitle a:active , article.linksTitle a:hover {
+	border: 25% ;
+	padding:.08rem;
+	margin:5% ;
+	padding-left: 12%;
+ }
+
+
+ .linksTitle , .linksTitle a{
+	font-style: normal;
+	font-family:"mighty" Arial, Helvetica, sans-serif;
+	background-color: #5fcf80;
+	color: black;
+	padding: .5%;
+	display: flex;
+	justify-content: center;
+	
+	
+	
+
+
+ }
+
+
+
+
+ article { 
+	font-size: larger;
+	padding: 0px 20px ;
+ }
+
+
+
+
+.headerAside p {
+	font-family:  Arial, Helvetica, sans-serif ;
+	font: 150% "mighty";
+}
+
+
+
+
+/*    ---------------- Header adjustment - ( my code isn't  entirely perfected yet...)       */ 
+
+.headerContainer img {
+	padding: .5rem;
+	margin: .4rem;
+}
+
+
+.largeLogoClass{
+	display: none;
+}
+
+/*   Now for some fonts, lets see. . . .    */ 
+ @font-face {
+	font-family: "Signature" ;
+	src: url(/font/chintzy.ttf); format("ttf");
+ }
+
+ @font-face {
+	font-family: "mighty" ;
+	src: url(/font/ANGELES\ PERSONAL\ USE.ttf); format("ttf");
+ }
+
+ @font-face {
+	font-family: "fancy";
+	src: url(/font/Ambawang\ Signature.otf); format ("otf");
+ }
+
+
+/* //////////////////////////////////////////// */
+
+
+
+
+
+
+/*   Media Queries        */  
+
+
+.headerAside h2 {
+	
+}
+
+@media screen and (min-width:220px ){
+	.headerAside p {
+		font-family:  Arial, Helvetica, sans-serif ;
+		font: 2em "mighty";
+		display: flex;
+		justify-content: center;
+	}
+
+
+}
+
+@media screen and (min-width:420px ){
+
+	.headerAside p{
+		font-family:  Arial, Helvetica, sans-serif ;
+		font: 2.5em "mighty";
+	}
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 630px) {
+
+	.headerContainer h3{
+		display: flex;
+		justify-content: flex-start; }
+
+		.headerAside p{
+			font-family:  Arial, Helvetica, sans-serif; ;
+			font: 3.0em "mighty";
+		}
+
+	}
+
+
+
+	
+
+
+
+	.smallLogoClass img {
+		display: none;
+	}
+
+	.largeLogoClass {display: block;}
+
+
+	.headerContainer h3{
+
+		padding-right: 2px;
+	}
+
+	header {
+		padding: 2px;
+	}
+
+	.linksTitle, .linkstitle{
+		font-family: "mighty";
+		font-display:
+		
+	}
+
+
+
+}
+
+
+
+

@@ -19,7 +19,7 @@ header{
 header h3 {
 	background-color: #5fcf80;
 	display: flex;
-	justify-items: flex-s;
+	font-family: "Signature" ,'Courier New', Courier, monospace ;
 
 }
 
@@ -175,7 +175,7 @@ p a {
 	border: double green .2rem;
 	margin:.35rem; 
 	}
-.htmlList , .cssList ,.jsList {
+.htmlList , .cssList ,.jsList  {
 	margin-left: -2.75rem;
 	display: block;
 	justify-content: center;
@@ -185,14 +185,15 @@ p a {
 
 
 
+
 /*   */ 
 
 .htmlList a , .cssList a, .jsList a{
 	text-decoration: none;
-	color: #000000; 
+    color: #0f47af;
 	padding-top: 3px ;
 	padding-bottom: 3px;
-	font-style: normal;
+	font-style: italic;
 
 }
 .htmlList ul a:active{ 
@@ -215,11 +216,12 @@ p a {
 	border: double green .2rem;
 	margin:.35rem; 
 	padding-bottom: 4px;	
+
 }
 
-.jsList h4 {
 
-	padding: 3px;
+.jsList >a {
+	text-decoration: none;
 }
 	
 

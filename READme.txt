@@ -132,6 +132,6 @@ ty
 
 
 how to make your square green on github by Jacob R. Thompson. - 
-keep on making 
+keep on making updates
 
 

@@ -1,0 +1,584 @@
+ basic js and  
+functions from freecc , 
+an awewsome example template for starting  
+===============================================================
+
+
+
+function with args returning a result. 
+
+
+
+ - - -
+function reusableFunction() { 
+  console.log( "Hi World")
+}
+reusableFunction();     // = " Hi World"
+----
+-- function with parameters , that yields a console.log of those paramaters , 
+    together. 
+----
+function testFun(param1, param2){ 
+console.log(param1 + param2)
+}
+testFun("Hello ", "World");
+
+
+
+
+=============================================================
+- ---function  with arguments and the returned result , 
+using return ===
+= = = ========================================
+function functionWithArgs(param1, param2){
+  return param1 + param2 
+
+}
+const returnedResult = functionWithArgs(3,5)
+
+console.log(returnedResult)
+
+
+ex 2 -     // this yields the result of 25 in the console. 
+function timesFive(num) { 
+  return num *= 5; 
+}
+let newVar = timesFive(5)
+console.log(newVar)
+
+
+========================================================
+
+
+--- Global Scope and functions - - - 
+// Declare the myGlobal variable below this line
+function fun1() {
+  // Assign 5 to oopsGlobal here
+
+}
+// Only change code above this line
+
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+--------------------------------
+
+functi0n with if statement , checking - stuff 
+
+// Declare the myGlobal variable below this line
+let myGlobal = 10;
+
+function fun1() {
+  // Assign 5 to oopsGlobal here
+oopsGlobal = 5;
+}
+fun1(oopsGlobal)
+// Only change code above this line
+
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  console.log("myGlobal: " + myGlobal)
+  console.log(3 + oopsGlobal)
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output + oopsGlobal);
+}
+
+===========================================
+
+Making a Queue functions , using a function called 
+nextInLine()  - 
+
+function nextInLine(arr, item) {
+  // Only change code below this line
+
+  let array = ["Sample Array", 1]
+  arr.push(item)
+  return arr.shift();
+  // Only change code above this line
+}
+
+// Setup
+let testArr = [1, 2, 3, 4, 5];
+
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+
+==================================================================================
+- - - Boolean functions , return either true or false. 
+
+function welcomeToBooleans() {
+  // Only change code below this line
+  return true; // Change this line
+  // Only change code above this line
+}
+console.log(welcomeToBooleans())
+// this code console logs out true
+
+
+================================================================================
+Functions - 
+Boolean values in functions , with return statements , -  
+-----------------------------------------------------------------------------------
+function trueOrFalse(wasThatTrue) {
+  // Only change code below this line
+                         // if the wasThatTrue variable is true , the first return statement is
+ ran, if false , then the function returns the second return statement. 
+if (wasThatTrue) { 
+  return "Yes That was True"
+}
+return "That was false"
+  // Only change code above this line
+}
+console.log(trueOrFalse(true));
+-------------------------------------------------------------------------------------------------
+
+Function - with an if , condition  , that evaluates with an equality operator , for a numerical - or - string value. 
+function testStrict(val) {
+  if (val == 10) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+testStrict(10);
+console.log(testStrict(10))
+
+===========================================================================
+
+Function , comparing , 2 or more values using an if statement. 
+ 
+function compareEquality(a, b) {
+  if (a == b) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+compareEquality(10, "10");
+===================================================================================
+
+Function  using comparison statements with the not equal too character - 
+
+// Setup
+function testNotEqual(val) {
+  if (val != 99) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+testNotEqual(10);
+console.log(testNotEqual(10));
+
+=-====================================================================================
+Function  using comparison statements with the not equal too character - 
+
+// Setup
+function testStrictNotEqual(val) {
+  if (val !== 17) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+testStrictNotEqual(10);
+console.log(testStrictNotEqual(10))
+
+============================================================================================
+
+
+function testGreaterThan(val) {
+  if (val > 100) {  // Change this line
+    return "Over 100";
+  }
+
+  if (val > 10) {  // Change this line
+    return "Over 10";
+  }
+
+  return "10 or Under";
+}
+
+testGreaterThan(10);
+console.log(testGreaterThan(51));
+====================================================================
+
+- - - 
+function with multiple responses 
+ - - -  
+function testGreaterThan(val) {
+  if (val > 100) {  // Change this line
+    return "Over 100";
+  }
+
+  if (val > 10) {  // Change this line
+    return "Over 10";
+  }
+
+  return "10 or Under";
+}
+testGreaterThan(10);
+console.log(testGreaterThan(51));
+
+
+ex 2  
+
+function testLessOrEqual(val) {
+  if (val <= 12) {  // Change this line
+    return "Smaller Than or Equal to 12";
+  }
+
+  if (val <= 24 ) {  // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+testLessOrEqual(10);
+console.log(testLessOrEqual(99) + " problems but a bitch aint one" )
+
+
+==========================================================================================
+
+Comparisons with the Logical Or Operator
+
+function testLogicalOr(val) {
+  // Only change code below this line
+
+  if (val < 10 || val > 20) {
+    return "Outside";
+
+  }
+  // Only change code above this line
+  return "Inside";
+}
+
+testLogicalOr(15);
+
+console.log(testLogicalOr(15))  
+
+
+======================================================
+
+functions - if / else statements with values 
+
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  } else if (val < 5) {
+    return "Smaller than 5";
+  } else {
+  return "Between 5 and 10";
+  }
+}
+testElseIf(7);
+=====================================================================
+- - 
+Function chaining together multiple if / else statements , 
+to make a t shirt sizer. 
+
+function testSize(num) {
+  // Only change code below this line
+ if (num < 5){
+  return "Tiny"
+ }else if(num < 10){
+   return "Small"
+ }else if(num < 15){
+   return "medium"
+ }else if(num < 20){ 
+   return "large"
+ }else if(num >= 20){ 
+   return "huge"
+ }
+}
+testSize(29);
+
+console.log(testSize(20));
+
+==================================================================================
+ - - Golf Code - - 
+
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  // Only change code below this line
+
+  if (strokes === 1) {
+    return names[0]
+  }else if (strokes <= par -2){
+    return names[1]
+  }else if (strokes === par - 1) { 
+    return names[2]
+  }else if (strokes === par) { 
+    return names[3]
+  }else if (strokes === par + 1) {
+    return names[4]
+  }else if (strokes === par + 2){ 
+    return names[5]
+  }else if (strokes >= par +3) { 
+    return names[6]
+  }
+  return "Change Me";
+  // Only change code above this line
+}
+//golfScore(5, 4);
+console.log(golfScore(6, 2))
+- - 
+===========================================
+
+SWITCH STATEMENTS - inside a Function - - - - -
+
+function caseInSwitch(val) {
+  let answer = "";           // The variable answer is 
+  //first declared ,above and inside the function.
+  // Only change code below this line
+  switch (val) {
+    case 1: 
+        console.log("A");
+        answer = "alpha";     // answer variable re declared 
+      break;
+    case 2:
+        console.log("B");
+       answer = "beta"; // re-declared variable. 
+       break;
+    case 3: 
+        console.log("C"); 
+        console.log("C is supposed to fucking stand for charlie dipshit. ");
+       answer = "gamma";
+      break; 
+    case 4:
+        console.log("D"); 
+        let answer = "delta"
+      break;
+
+    case "Cyrincius": 
+       console.log(" Is Buttered")
+  }
+  // Only change code above this line
+  return answer
+}
+caseInSwitch();
+
+console.log(caseInSwitch("Cyrincius"))
+
+==================================================================================================
+
+Switch Example # 2 - with return results. 
+  
+function caseInSwitch(val) {
+  let answer = "";
+  // Only change code below this line
+
+switch (val) { 
+  case 1:
+      answer = "alpha"; 
+    break;
+  case 2:
+     answer = "beta";
+      break; 
+  case 3: 
+    answer = "gamma";
+      break; 
+  case 4: 
+    answer = "delta";
+   break;  
+}
+ 
+  // Only change code above this line
+  return answer;
+}
+
+console.log(caseInSwitch(1));
+
+====================================================================================
+
+-- SWITCH AND CASE STATEMENTS  - - - 
+
+Adding a Default Option in Switch Statements
+In a switch statement you may not be able to specify all possible values 
+as case statements. Instead, you can add the default statement which will
+ be executed if no matching case statements are found. Think of it like the
+ final else statement in an if/else chain.
+
+A default statement should be the last case.
+
+function switchOfStuff(val) {
+  let answer = "";
+  // Only change code below this line
+  switch(val) {
+    case 1:
+        console.log("1");
+        answer = "apple";
+       break; 
+    case 2:
+          console.log("2")
+        answer= "bird"; 
+      break;
+    case 3: 
+        answer ="cat";
+      break;
+    default:
+        answer = "stuff";
+} 
+  // Only change code above this line
+  return answer;
+}
+switchOfStuff();
+console.log(switchOfStuff())
+========================================================== 
+
+SWITCH STATEMENT _ MULTIPLE CASES  
+
+function sequentialSizes(val) {
+  let answer = "";
+  // change code for a low , medium , high ranges.
+   switch(val) { 
+     case 1: 
+     case 2: 
+     case 3:  
+          answer = "Low";  console.log(answer);
+        break;
+     case 4: 
+     case 5:
+     case 6: 
+          answer = "Mid"; console.log(answer);
+        break;
+    case 7:
+    case 8: 
+    case 9: 
+          answer = "High";console.log(answer);
+        break;
+
+   }
+  // Only change code above this line
+  return answer;
+}
+
+sequentialSizes(8);              // "High "
+====================================================================
+
+SWITCH STATEMENT - and chained if statement conversion  // 
+			these two segments of code say and do the same functions.  
+
+ function chainToSwitch(val) {
+  let answer = "";
+  // Only change code below this line
+
+  if (val === "bob") {
+    answer = "Marley";
+  } else if (val === 42) {
+    answer = "The Answer";
+  } else if (val === 1) {
+    answer = "There is no #1";
+  } else if (val === 99) {
+    answer = "Missed me by this much!";
+  } else if (val === 7) {
+    answer = "Ate Nine";
+  }
+
+
+  switch(val){ 
+     case "bob":
+        answer = "Marley";console.log(answer);
+      break;
+    case 42: 
+      answer = "The Answer";console.log(answer);
+     break;
+    case 1: 
+      answer = "There is no #1";console.log(answer);
+     break;
+    case 99:
+      answer = "Missed me by this much!";console.log(answer)
+     break;
+    case 7: 
+     answer = "Ate Nine";console.log(answer)
+     break;
+
+  }
+  // Only change code above this line
+  return answer;
+}
+
+chainToSwitch(7);
+
+===============================================================================================================
+
+returning values from functions , 
+	   
+
+	
+	-  shortened with logic in return statement 
+function isLess(a, b) {
+  // Only change code below this line
+    return a < b
+  // Only change code above this line
+}
+isLess(10, 15);
+console.log(isLess(10,20));
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

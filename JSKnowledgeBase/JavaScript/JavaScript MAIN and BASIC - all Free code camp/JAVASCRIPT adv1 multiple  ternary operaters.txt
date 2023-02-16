@@ -1,0 +1,142 @@
+
+The following function uses if, else if, and else statements to check multiple conditions:
+====
+function findGreaterOrEqual(a, b) {
+  if (a === b) {
+    return "a and b are equal";
+  }
+  else if (a > b) {
+    return "a is greater";
+  }
+  else {
+    return "b is greater";
+  }
+}
+==
+The above function can be re-written using multiple conditional operators:
+
+function findGreaterOrEqual(a, b) {
+  return (a === b) ? "a and b are equal" 
+    : (a > b) ? "a is greater" 
+    : "b is greater";
+}
+=================================================================================================
+
+//Using multiple ternary operators. 
+
+function checkSign(num) {
+  return  (num > 0) ? "positive" : (num < 0) ? "negative":"positive";
+}
+checkSign(10);
+
+console.log(checkSign(10))
+
+
+========================================================================
+
+
+Use Recursion to Create a Countdown
+In a previous challenge, you learned how to use recursion to replace a for loop.
+ Now, let's look at a more complex function that returns an array of consecutive
+ integers starting with 1 through the number passed to the function.
+
+As mentioned in the previous challenge, there will be a base case. 
+The base case tells the recursive function when it no longer needs to call itself. 
+It is a simple case where the return value is already known.
+ There will also be a recursive call which executes the original function
+ with different arguments. If the function is written correctly, eventually
+ the base case will be reached.
+
+For example, say you want to write a recursive function that returns an
+ array containing the numbers 1 through n. This function will need to accept
+ an argument, n, representing the final number. Then it will need to call itself
+ with progressively smaller values of n until it reaches 1. You could write the function as follows:
+
+function countup(n) {
+  if (n < 1) {
+    return [n];
+  } else {
+    const countArray = countup(n - 1);
+    countArray.push(n);
+    return countArray;
+  }
+}
+console.log(countup(10));
+ // this will console log this arrar to the console. 
+as long as the number is less then one the number wil be incremented in an array. 
+
+a number to count up towards in an array. 
+
+  ' [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] ' 
+
+
+
+\\\\\\\/example\///////////
+
+----  THIS IS A FUNCTION THAT COUNT DOWNS THE NUMBERS AND 
+ENTERS IN AN ARRAY.   IT USES THE UNSHIFT METHOD. 
+
+function countup(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countup(n - 1);
+    countArray.unshift(n);
+    return countArray;
+  }
+}
+console.log(countup(5));
+==================================================================
+
+function countdown(n){
+   return n < 1 ? [] : [n, ...countdown(n - 1)];
+}
+
+---------- using recursion , ternary operators and an ... statement , addeed previously before the function, 
+iterates through the function each time it is called.
+
+//
+
+
+
+==============================================================================================================================
+
+=============================================================================================
+=================================================================================================
+================================================================================================
+==============================================================================
+
+This is a function that returns an array of numbers within the range given. 
+
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum < startNum) {
+    return [];
+  } else {
+    const numbers = rangeOfNumbers(startNum, endNum - 1);
+    numbers.push(endNum);
+    return numbers;
+  }
+}
+console.log(rangeOfNumbers(3, 20))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,358 @@
+===============================================================
+
+=============================================================
+
+
+==============================================================
+-------------------Basic JavaScript Object  --------------------
+------------
+
+const myDog = {
+  // Only change code below this line
+  name: "Dixie", 
+  legs: 4, 
+  tails: 1, 
+  friends:["me", "Y0u", "True good pet owners"]
+  // Only change code above this line
+};
+
+console.log(myDog)
+===============================================================
+===========================================================================
+Objects and dot notation or bracket notation.  
+
+
+function checkObj(obj, checkProp) {
+
+  if (obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];
+  } else {
+    return "Not Found";
+  }
+
+}
+
+console.log(checkObj)
+
+---------------------------------
+========================================
+==============================
+JavaScript Algorithms and Data Structures
+Basic JavaScript
+Accessing Object Properties with Dot Notation
+There are two ways to access the properties of an object: dot notation (.) and bracket notation ([]), similar 
+to an array.
+
+Dot notation is what you use when you know the name of the property you're trying to access ahead of time.
+
+Here is a sample of using dot notation (.) to access an object's property: -------------------------------------
+
+// Setup
+const testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+
+const hatValue = testObj.hat;     
+const shirtValue = testObj.shirt;   
+
+console.log(hatValue)
+console.log(shirtValue)
+
+// ballcap
+// jersey
+
+======================================================================================
+
+=======--Objects , using bracket notation too acess a objects
+property. 
+
+
+// Setup
+const testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+
+// Only change code below this line
+const entreeValue = testObj["an entree"];   // Change this line
+const drinkValue = testObj["my side"];    // Change this line
+
+console.log(testObj["an entree"])
+console.log(testObj["my side"])
+console.log(testObj["the drink"])
+
+======================================================================================
+Accessing Object Properties with Variables
+===================================================================
+
+Another use of bracket notation on objects is to acces
+s a property which is stored as the value of a variable. 
+This can be very useful for iterating through an object's 
+properties or when accessing a lookup table.
+
+Here is an example of using a variable to access a property:
+
+============================================================================================
+
+// Setup
+const myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+console.log("I am one badass and sexymofo..."); 
+console.log(myDog);
+
+console.log(myDog.name);
+console.log(myDog["legs"]);
+
+myDog["name"] = 9;
+
+console.log(myDog)
+
+myDog.name = "Happy Coder"
+console.log(myDog)
+
+====================================================================
+
+Add New Properties to a JavaScript Object---
+You can add new properties to existing JavaScript objects the same way you would modify them.
+
+Here's how we would add a bark property to ourDog:
+
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+myDog.bark = "woof"
+
+console.log(myDog)
+
+console.log(myDog.bark)
+
+============================================================
+
+====-----------Object , deleting properties----------=======
+We can also delete properties from objects like this:
+delete ourDog.bark;
+
+// Setup
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+
+delete myDog.tails 
+console.log(myDog)
+//taking off the tail key - 
+// Only change code below this line
+
+========================================================== 
+
+Objects in Function , while 
+using bracket notation to select the correct 
+key / value pair to the return statement. 
+
+result is set equal to the key / value pair using object notation. 
+then , the result is the response. 
+
+// Setup
+function phoneticLookup(val) {
+  let result = "";
+
+  // Only change code below this line
+let lookup = { 
+  "alpha": "Adams",
+  "bravo": "Boston", 
+  "charlie": "Chicago", 
+  "delta": "Denver", 
+  "echo": "easy", 
+  "foxtrot": "Frank", 
+}
+result = lookup[val];
+  // Only change code above this line
+  return result;
+}
+
+phoneticLookup("charlie");
+
+console.log(phoneticLookup("alpha"))
+
+//this console logs  // Adams.
+
+=================================================================================
+
+
+
+Objects and checking properties 
+
+
+function checkObj(obj, checkProp) {
+
+  if (obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];
+  } else {
+    return "Not Found";
+  }
+
+}
+
+console.log(checkObj)
+
+======================================================================
+-----Accessing Nested Objects-----
+The sub-properties of objects can be accessed by chaining together the dot or bracket notation.
+
+Here is a nested object:
+
+const ourStorage = {
+  "desk": {
+    "drawer": "stapler"
+  },
+  "cabinet": {
+    "top drawer": { 
+      "folder1": "a file",
+      "folder2": "secrets"
+    },
+    "bottom drawer": "soda"
+  }
+};
+
+ourStorage.cabinet["top drawer"].folder2; 
+ourStorage.desk.drawer;
+============================================================================
+
+
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     }, 
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+const gloveBoxContents = myStorage.car.inside["glove box"];
+
+console.log(gloveBoxContents) 
+
+====================================================================
+
+Accessing Nested Arrays
+As we have seen in earlier examples, objects can contain both nested objects and nested arrays. Similar to accessing nested objects, array bracket notation can be chained to access nested arrays.
+
+Here is an example of how to access a nested array:
+
+const ourPets = [
+  {
+    animalType: "cat",
+    names: [
+      "Meowzer",
+      "Fluffy",
+      "Kit-Cat"
+    ]
+  },
+  {
+    animalType: "dog",
+    names: [
+      "Spot",
+      "Bowser",
+      "Frankie"
+    ]
+  }
+];
+
+ourPets[0].names[1];
+ourPets[1].names[0];
+ourPets[0].names[1] would be the string Fluffy, and ourPets[1].names[0] would be the string Spot.
+
+========================================================================
+
+example # 2 , accessing nested arrays in objects 
+
+const myPlants = [
+  {
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }
+];
+
+const secondTree = myPlants[1].list[1]; 
+
+==========================================================================
+
+
+++ ''
+
+
+function updateRecords(records, id, prop, value) {
+  if (prop !== "tracks" && value !== "") {
+    records[id][prop] = value;
+  } else if (prop === "tracks" && value !== "" && records[id].hasOwnProperty("tracks") === false) {
+    records[id][prop] = [value];
+  } else if (prop === "tracks" && value !== "") {
+    records[id][prop].push(value);
+  } else if (value === "") {
+    delete records[id][prop];
+  }
+  return records;
+}
+
+console.log(updateRecords("1","2","track","4"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

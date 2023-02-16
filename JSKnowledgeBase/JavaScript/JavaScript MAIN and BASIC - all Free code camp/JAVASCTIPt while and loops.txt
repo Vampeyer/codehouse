@@ -1,0 +1,234 @@
+Step one - take array
+Step two - take for loop 
+Step three - Keep on pushin baby. 
+==========
+// Setup
+const myArray = [];
+for (let i = 0;i < 5;i++) { 
+   myArray.push(i);  
+}
+
+// Only change code below this line
+
+console.log(myArray)
+=======================================================================================================
+
+
+Example 2. 
+// Setup
+const myArray = [];
+
+for(let i = 0;i < 10; i += 2){ 
+  myArray.push(i)
+}
+console.log(myArray)
+// Only change code below this line
+=========================================================
+===================================================================================================
+
+Iterate with JavaScript While Loops
+You can run the same code multiple times by using a loop.
+
+The first type of loop we will learn is called a while
+ loop because it runs while a specified condition is true
+ and stops once that condition is no longer true.
+
+// Setup
+const myArray = [];
+
+let i = 5;
+
+while ( i >=  0) { 
+  myArray.push(i);
+  i--
+}
+
+console.log(myArray)
+// Only change code below this line
+
+------------------------------------------------------------------------------------------------------
+
+// -- LEARN --   Array + Total Amount ( or an  etc amount )   - inserting an array into a total ,   good for combining data / etc. 
+// Setup
+const myArr = [2, 3, 4, 5, 6];
+
+let total = 0; 
+
+for (let i = myArr.length -1; i >= 0; i--){
+  total += myArr[i];
+}
+console.log(total)
+
+
+=====================================================================================
+
++++ Nested For Loops +++ 
+-------------------------------------------------------------------
+   - This example has two for loops.  the first loop , 
+is an  Ithat loops through the number of times according to the maximum length 
+of whatever the array length is. The second loop iterates through each integer in the length, 
+of the given array , or arrays , in the given - multiplyAll(); function. 
+
+multiplying the total together of the three dimensional array, 
+which is just multiplication itself , and setting the value to the 
+product 
+variable previously declared. 
+----------------------------------------------------------
+
+
+function multiplyAll(arr) {
+  let product = 1;
+  // Only change code below this line
+
+for (let i = 0; i < arr.length; i++){ 
+  for( let j = 0; j < arr[i].length; j++){
+   
+   product *= arr[i][j]
+    
+  }
+}
+  // Only change code above this line
+  return product;
+}
+console.log(multiplyAll([[1, 2], [3, 4], [5, 6, 7]]));
+=================================================================
+===========================================================
+======================================
+============================
+===========
+
+Do ... While loops in JavaScript. 
+
+------
+   // Setup
+const myArray = [];
+let i = 10;
+
+// Only change code below this line
+
+do { 
+  myArray.push(i);
+  i++;
+}   // a do is always true and it does .... 
+//whatever is in curly braces. 
+
+while (i < 5)    // as long as the while evaluates to true as well.   a do .... while a condition. 
+
+console.log(myArray)   // [10]       // this executes only once , so  === 10.
+-----------------------------------------------------
+===============================
+
+
+
+
+function sum(arr, n) {
+  if(n <= 0) {
+    return 0;
+  } else {
+    return sum(arr, n - 1) + arr[n - 1];
+  }
+}
+
+console.log(sum(5, 5)) 
+
+
+                                                                                                 
+
+						    -			         /\    /\         
+                                                                                 | |  |  \   /\                           +
+						  -  - --                        \  | \   | /  |                              
+						-  -  -                           \  ||  | |  //| 		                      
+					      -- -- -- --                       /\_\  |  || | / |                      
+					  -- --- -- -- -               	        \  \\  |  | |/ /    		  
+					--------  --  --                         \  \\    | // /      
+				  -----	               ----                       \  \\    // / 
+                              -------   [===]    [===] --                          \      // /
+                                                                                    \_______/
+				-----	              /                                \o
+				 ----	   ==>>	     /
+				    ---		    /		   ~~~  ~~~  ~~~  ~~~	
+        		      	   ----	{"0000000000000000000000000":"~~~~~~~~~~~~", "~~~ ~~~ ~~~",  
+				      \		   /	 		~~~ ~~~ ~~~}		
+				       \__	__/
+					  \____/
+
+
+------------------
+         1                    /\    /\ 
+         2                    | |  |  \   /\
+         3                    \  | \   | /  |  
+         4                     \  ||  | |  //|
+         5                   /\_\  |  || | / | 
+         6                   \  \\  |  | |/ /                  
+         7                    \  \\    | // / 
+         8                     \  \\    // /
+         9                      \      // /
+       	 10			 \_______/
+ 	11			    \O
+
+
+--------
+
+Information lookup function with two 
+different outputs using nested if loop in for loop. 
+
+// Setup
+const contacts = [
+  {
+    firstName: "Akira",
+    lastName: "Laine",
+    number: "0543236543",
+    likes: ["Pizza", "Coding", "Brownie Points"],
+  },
+  {
+    firstName: "Harry",
+    lastName: "Potter",
+    number: "0994372684",
+    likes: ["Hogwarts", "Magic", "Hagrid"],
+  },
+  {
+    firstName: "Sherlock",
+    lastName: "Holmes",
+    number: "0487345643",
+    likes: ["Intriguing Cases", "Violin"],
+  },
+  {
+    firstName: "Kristian",
+    lastName: "Vos",
+    number: "unknown",
+    likes: ["JavaScript", "Gaming", "Foxes"],
+  },
+];
+
+
+function lookUpProfile(name, prop){
+  for (var i = 0; i < contacts.length; i++) {
+    if(contacts[i].firstName === name) {
+      return contacts[i][prop] || "No such property";
+    }
+  }
+  return "No such contact";
+}
+
+// Change these values to test your function
+var data = lookUpProfile("Sherlock", "likes");
+
+console.log(data);
+  // Only change code above this line
+
+
+========================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+

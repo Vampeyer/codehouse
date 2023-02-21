@@ -1,0 +1,225 @@
+Basic Data Structures - 
+ Access an Array's Contents Using Bracket Notation
+The fundamental feature of any data structure is, of course,
+ the ability to not only store data, but to be able to retrieve 
+that data on command. So, now that we've learned how to create
+ an array, let's begin to think about how we can access that array's information.
+
+When we define a simple array as seen below, there are 3 items in
+ it:
+
+let ourArray = ["a", "b", "c"];
+In an array, each array item has an index.
+ This index doubles as the position of that item in the array, and how you reference it.
+ However, it is important to note, that JavaScript arrays are zero-indexed, meaning that the first element of an array is actually at the zeroth position, not the first. In order to retrieve an element from an array we can enclose an index in brackets and append it to the end of an array, or more commonly, to a variable which references an array object. This is known as bracket notation. For example, if we want to retrieve the a from ourArray and assign it to a variable, we can do so with the following code:
+
+let ourVariable = ourArray[0];
+Now ourVariable has the value of a.
+
+In addition to accessing the value associated with an index, you can also set an 
+index to a value using the same notation:
+
+ourArray[1] = "not b anymore";
+Using bracket notation, we have now reset the item at index 1 from the string b,
+ to not b anymore. Now ourArray is ["a", "not b anymore", "c"].
+------------------------------------------------------------
+
+let newVariable = [] 
+newvariable[0] = "Basic Data Structures. 
+
+====================================================
+=========================================================================
+
+
+An array's length, like the data types it can contain, is not fixed. Arrays can be defined with a length of any number of
+ elements, and elements can be added or removed over time; in other words, arrays are mutable. In this challenge,
+ we will look at two methods with which we can programmatically modify an array: Array.push() and Array.unshift().
+
+Both methods take one or more elements as parameters and add those elements to the array the method is being called
+ on; the push() method adds elements to the end of an array, and unshift() adds elements to the beginning. Consider
+ the following:
+
+let twentyThree = 'XXIII';
+let romanNumerals = ['XXI', 'XXII'];
+
+romanNumerals.unshift('XIX', 'XX');
+romanNumerals would have the value ['XIX', 'XX', 'XXI', 'XXII'].
+
+romanNumerals.push(twentyThree);
+
+romanNumerals would have the value ['XIX', 'XX', 'XXI', 'XXII', 'XXIII']. 
+
+
+Notice that we can also pass variables, which allows us even greater flexibility in
+ dynamically modifying our array's data."
+------------------------------------------------------------------------------------
+--------------------------------------------------------------
+
+
+
+example  
+
+function mixedNumbers(arr) {
+  // change code below this line
+  arr.unshift("I", 2, "three");
+  arr.push(7, "VIII", 9);
+  // change code above this line
+  return arr;
+}
+
+// do not change code below this line
+console.log(mixedNumbers(["IV", 5, "six"]));
+
+
+=============================================================================================================
+
+Remove Items from an Array with pop() and shift()
+Both push() and unshift() have corresponding methods that are nearly functional
+ opposites: pop() and shift(). As you may have guessed by now, instead of adding,
+ pop() removes an element from the end of an array, while shift() removes an element 
+from the beginning. The key difference between pop() and shift() and their cousins push()
+ and unshift(), is that neither method takes parameters, and each only allows an array to
+ be modified by a single element at a time.
+
+
+function popShift(arr) {
+  let popped = arr.pop(); // Change this line
+  let shifted = arr.shift(); // Change this line
+  return [shifted, popped];
+}
+
+console.log(popShift(['challenge', 'is', 'not', 'complete']));
+
+
+
+======================================================================
+----------------------------------------------------------------
+================================================================
+
+
+==-- IMPORTANT , .splice() to remove data from an array. 
+
+
+
+.splice() will remove variables from an array. 
+
+const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+// only change code below this line
+arr.splice(1, 4);
+// only change code above this line
+console.log(arr);
+
+//  [ 2, 5, 2, 1 ] 
+
+=========================================================================
+-----------------------------------------------------------------------------------------
+.splice()  can take three parameters , and the last being one or more 
+elements to add to an array. 
+.splice() with three params ,  can remove and add from an array. 
+---------
+
+Add Items Using splice()
+Remember in the last challenge we mentioned that splice() can take up to three parameters? Well,
+ you can use the third parameter, comprised of one or more element(s), to add to the array. This can 
+be incredibly useful for quickly switching out an element, or a set of elements, for another.
+-------------------------------------------
+const numbers = [10, 11, 12, 12, 15];
+const startIndex = 3;
+const amountToDelete = 1;
+
+numbers.splice(startIndex, amountToDelete, 13, 14);
+console.log(numbers);
+The second occurrence of 12 is removed, and we add 13 and 14 at the same index.
+ The numbers array would now be [ 10, 11, 12, 13, 14, 15 ].
+--------------------------------------------------
+Here, we begin with an array of numbers.
+ Then, we pass the following to splice():
+ The index at which to begin deleting elements (3), the number of elements to be deleted (1), and the remaining arguments (13, 14) will be inserted starting at that same index. Note that there can be any number of elements (separated by commas) following amountToDelete, each of which gets inserted.
+
+We have defined a function, htmlColorNames, which takes an array of HTML colors as an argument. Modify the function using splice() to remove the first two elements of the array and add 'DarkSalmon' and 'BlanchedAlmond' in their respective places.
+
+
+ ---------------------------------------------------
+--------------------------
+function htmlColorNames(arr) {
+  // change code below this line
+  arr.splice(0, 2, "DarkSalmon", "BlanchedAlmond");
+  // change code above this line
+  return arr;
+}
+
+// do not change code below this line
+console.log(
+  htmlColorNames([
+    "DarkGoldenRod",
+    "WhiteSmoke",
+    "LavenderBlush",
+    "PaleTurqoise",
+    "FireBrick"
+  ])
+);      
+
+
+                             // so its like, .splice( startIndex[0] , # of amount to be removed after index, params to place after the index here. 
+                                   								ie. ['DarkSalmon']			
+================================================================================================
+
+=========================================================================================
+======================================================================================
+============================================================
+============================
+=======================
+===========
+===
+= 
+.slice() , can be used to copy array items.      ---- copy them. 
+so, 
+  let oneArray = [1,2,3]
+let twoArray = oneArray.slice(2,3)
+console.log(twoArray) 
+
+// logs : 3  
+
+ // twoArray === 3      - true
+=========================================================
+
+function using slice() , 
+
+function forecast(arr) {
+  // change code below this line
+  return arr.slice(2, 4);
+}
+
+// do not change code below this line
+console.log(
+  forecast(["cold", "rainy", "warm", "sunny", "cool", "thunderstorms"])
+);
+
+
+//[warm,sunny]
+
+
+=========================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

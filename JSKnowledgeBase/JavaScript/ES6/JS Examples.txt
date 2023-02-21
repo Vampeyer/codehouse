@@ -1,0 +1,20 @@
+
+Object manipulation 
+
+
+let newObj= { 
+  key1: 1, 
+  key2: 2, 
+  key3: "three", 
+  key4: "four"
+}
+console.log(newObj.key3) 
+newObj.key1 = "OFFICIAL_KEY10101" 
+newObj.key3 = "NEW_KEY"
+console.log(newObj)
+console.log(newObj.key3)
+
+
+array manipulation 
+ let newArr = [[1,2,3,4],[5,6,7,8]] 
+

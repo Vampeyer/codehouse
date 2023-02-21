@@ -1,0 +1,388 @@
+
+========================
+=================================
+====================================
+============================================================================
+JavaScript and ES6  - aka ECMAscript 2015
+===========
+
+Compare Scopes of the var and let Keywords
+If you are unfamiliar with let, check out this challenge about the difference between let and var.
+When you declare a variable with the var keyword, it is declared globally, or locally if declared inside a function.
+The let keyword behaves similarly, but with some extra features. When you declare a variable with the let 
+keyword inside a block, statement, or expression, its scope is limited to that block, statement, or expression
+
+
+
+==============================================
+.The const declaration has many use cases in modern JavaScript.
+
+Some developers prefer to assign
+ all their variables using const
+ by default, unless they know they 
+will need to reassign the value. Only
+ in that case, they use let.
+
+However, it is important to
+ understand that objects (including arrays
+ and functions) assigned to a variable using
+ const are still mutable. Using the const
+ declaration only prevents reassignment of
+ the variable identifier.
+===
+
+const s = [5, 7, 2];
+function editInPlace() {
+  // Only change code below this line
+  s[0] = 2;
+  s[1] = 5;
+  s[2] = 7;
+  console.log(s)
+  // Only change code above this line
+}
+editInPlace();
+// -- [ 2, 5, 7 ]
+
+
+========================================================
+-=====================================================
+Prevent Object Mutation
+As seen in the previous challenge, const declaration
+ alone doesn't really protect your data from mutation.
+ To ensure your data doesn't change, JavaScript provides 
+a function Object.freeze to prevent data mutation.
+
+Any attempt at changing the object will be rejected, with
+ an error thrown if the script is running in strict mode.
+
+let obj = {
+  name:"FreeCodeCamp",
+  review:"Awesome"
+};
+Object.freeze(obj);
+obj.review = "bad";
+obj.newProp = "Test";
+console.log(obj); 
+The obj.review and obj.newProp assignments will result in errors,
+ because our editor runs in strict mode by default, and the console 
+will display the value { name: "FreeCodeCamp", review: "Awesome" }.
+
+
+example # 2 
+
+function freezeObj() {
+  const MATH_CONSTANTS = {
+    PI: 3.14
+  };
+  // Only change code below this line
+ 
+ Object.freeze(MATH_CONSTANTS)
+
+  // Only change code above this line
+  try {
+    MATH_CONSTANTS.PI = 99;
+  } catch(ex) {
+    console.log(ex);
+  }
+  return MATH_CONSTANTS.PI;
+}
+const PI = freezeObj();================
+=============================================
+====================================================================
+Arrow Functions  - 
+
+
+
+
+==
+
+
+
+
+
+
+/// the same arrow function but cool , make it  a const too. 
+
+const magic = () => {
+  return new Date();
+};						// even though i have no FNK idea at this point what  - new - does .....   :/
+
+// this is also interesting 
+// the Date() function will show you 
+// the current time and date as well 
+
+
+
+==================================================================
+
+
+
+===========================================================
+===============================================
+
+ - This is a preview of the much used 
+concat() method , 
+
+var myConcat = function(arr1, arr2) {
+  return arr1.concat(arr2);
+};
+
+console.log(myConcat([1, 2], [3, 4, 5]));
+
+//
+//        - "Even digital bart knows about the
+//            concat() method"
+//   /\/\/\
+//  __-^^   
+//   |  7 |
+//   |  O -0000000~~~~
+//   |  3 |  
+//    \__/
+//
+//  " Whoa dude ! , its not about a con artist cat? No , con-caten-ation" - joining two things together.  - Duuuuh. 
+//
+=======================================================================================================================
+
+===================================================================
+============================
+
+......Back to ES6 ...... 
+========================================
+================================
+=============================
+
+====================================================================================================================
+
+Set Default Parameters for Your Functions
+In order to help us create more flexible functions, ES6 introduces default parameters for functions.
+
+// Only change code below this line
+const increment = (number, value = 1) => number + value;
+// Only change code above this line
+console.log(increment(4))
+
+
+=================================================================
+
+
+...spread operator 
+=============================
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+arr2 = [...arr1];
+console.log(arr2);
+
+// using the spread operator to evaluate arrays in place. 
+
+========================================================================================
+===================================================================================
+===================================================
+
+* Objects and destructuring objects in ES6. 
+
+
+---------without destructuring , just selecting opjects.
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+// Only change code below this line
+
+const today = HIGH_TEMPERATURES.today;
+const tomorrow = HIGH_TEMPERATURES.tomorrow;
+
+// Only change code above this line
+
+======----WIth ES6 destructuring.=====================================================
+
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+// Only change code below this line
+
+const {today, tomorrow} = HIGH_TEMPERATURES; 
+        ^^^^  ^^^^^^^^^
+
+// --YOU HAVE TO LABEL KEYS FIRST, 
+// AFTER LET / CONST ASSIGNMENT VARIABLE   //
+
+// Only change code above this line
+====================================================================
+===============================
+===================================================================
+
+======ES6 Object Destructuring ,  assigning variables too , 
+object keys 
+
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+// Only change code below this line
+const {today: highToday, tomorrow: highTomorrow,} = HIGH_TEMPERATURES
+// Only change code above this line
+
+//** ES6 Destructuring Objects */
+// destructioning example 
+
+///const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
+
+========================================================================================================
+====================================================================================================
+=========================================================================================================
+===============================================================================================================
+=========================================
+=====
+=== ----- 
+const LOCAL_FORECAST = {
+  yesterday: { low: 61, high: 75 },
+  today: { low: 64, high: 77 },
+  tomorrow: { low: 68, high: 80 }
+};
+
+// Only change code below this line
+  
+const lowToday = LOCAL_FORECAST.today.low;
+const highToday = LOCAL_FORECAST.today.high;
+
+// Only change code above this line
+============================
+
+========================================
+--------------------------------------------------------------
+=======================================================
+--Assigning values of variables to Objects
+
+const LOCAL_FORECAST = {
+  yesterday: { low: 61, high: 75 },
+  today: { low: 64, high: 77 },
+  tomorrow: { low: 68, high: 80 }
+};
+
+// Only change code below this line
+const { today: { low: lowToday, high: highToday } } = LOCAL_FORECAST;
+// Only change code above this line
+ 
+===============================================
+((((((((((((((((((((((((((((((((((((((((((((((((((((((((
+))))))))))))))))))))))))))))))))))))))))))))))))))))
+
+Assigning values in an array by destructuring , 
+
+let a = 8, b = 6;
+[a, b] = [b, a];  
+
+==========================================================
+
+========================================================================
+=========================================================
+==========~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~+ Destructuring in array elements  , 
+
+simple example - 
+
+const newArr = [2,4,6,8,10,11,12,3,4,5,,6,7,8,9,10]
+
+const [a,b,c, ...d] = [1,2,3,4,5,6,7,8,9,10]
+
+console.log(c)   // logs out the # 3
+console.log(a,b,d) //  logs out : 1 2 [ 4, 5, 6, 7, 8, 9, 10 ]
+console.log(d)  //[ 4, 5, 6, 7, 8, 9, 10 ]
+
+console.log()
+
+---Variables a and b take the first and second values from the array.
+ After that, because of the rest syntax presence, arr gets the rest of
+ the values in the form of an array. 
+The rest element only works correctly as the last variable in the list.
+ As in, you cannot use the rest syntax to catch a subarray that leaves
+ out the last element of the original array.
+
+-----------------------------------------------------------
+
+
+
+ - - - - This is an example of destructuring an array 
+using the rest paramater , 
+- in this example, the array has been asked to remove the 
+first two elements and return the rest of the array, 
+
+ ***The first two elements have been declared via operator in this case ***
+
+- and removed to display the result.
+
+function removeFirstTwo(list) {
+  // Only change code below this line
+  const [a, b, ...shorterList] = list; // Change this line
+  // Only change code above this line
+  return shorterList;
+}
+
+const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const sourceWithoutFirstTwo = removeFirstTwo(source);
+
+console.log(sourceWithoutFirstTwo)
+// [ 3, 4, 5, 6, 7, 8, 9, 10 ]
+===============================================================
+==========================================================
+======------------------------------------------------------_-_-_-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

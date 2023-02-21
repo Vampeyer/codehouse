@@ -1,0 +1,197 @@
+Use Destructuring Assignment to Pass an Object as a Function's Parameters
+In some cases, you can destructure the object in a function argument itself.
+
+Consider the code below:
+
+const profileUpdate = (profileData) => {
+  const { name, age, nationality, location } = profileData;
+
+}
+This effectively destructures the object sent into the function.
+ This can also be done in-place:
+
+const profileUpdate = ({ name, age, nationality, location }) => {
+
+}
+When profileData is passed to the above function, 
+the values are destructured from the function parameter for use within the function.
+==================================================================================================
+
+before destructuring , 
+=================================================
+const stats = {
+  max: 56.78,
+  standard_deviation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85
+};
+
+// Only change code below this line
+const half = (stats) => (stats.max + stats.min) { 
+  
+}
+
+=======================================================
+
+after destructuring 
+==================================================
+============================================================================
+=========================================================================================
+===================================================================================================
+===============================================================================================
+=====================================================================================
+==================================================
+========================================
+=============================
+=======================
+===============
+===========
+=======
+====
+=------ Create Strings using Template Literals
+A new feature of ES6 is the template literal. This is a special type of string that makes creating complex strings easier.
+
+Template literals allow you to create multi-line strings and to use string interpolation features to create strings.
+
+Consider the code below:
+
+const person = {
+  name: "Zodiac Hasbro",
+  age: 56
+};
+
+const greeting = `Hello, my name is ${person.name}!
+I am ${person.age} years old.`;
+
+console.log(greeting);
+The console will display the strings 
+
+Hello, my name is Zodiac Hasbro! and I am 56 years old..
+==
+=====================================================================================================================================
+
+
+
+
+//Creating strings using template literals. 
+// 
+
+
+ const person = {               // first we have a simple object
+        name: "Jacob T",          // simple key value pair. 
+        age: 31,     
+        time: "1:14am",
+        date: "02/15/2023", 
+        datelog: Date(),
+        money: "$1000"
+                 }; 
+
+                                              // then use string template littorals. 
+const greeting = `Hello, my name is ${person.name} 
+I am ${person.age} years old.`;
+
+const newGreeting = "Today will be a good day " + `${person.datelog}`
+
+console.log(greeting + newGreeting );
+//console.log(newGreeting)
+
+
+//      Hello, my name is Jacob T 
+I am 31 years old.Today will be a good day Thu Feb 16 2023 01:24:28 GMT-0500 (Eastern Standard Time)
+
+===================================================================================================================
+=====================================================================================
+========================================================
+
+so to build on pointer functions and objects to return , we can pass the 
+values into the function and then use the return statement to return just the object
+
+
+const createPerson = (name, age, gender) => {
+  "use strict";
+  // change code below this line
+  return {
+    name,
+    age,
+    gender
+  };
+  // change code above this line
+};
+// this writes the object because it returns the object , creating a person entry. 
+
+==================================================================
+=============================================================================
+ARROW FUNCTIONS  
+//////////////////////////////////////////////////////////////////
+var myConcat = function(arr1, arr2) {
+  return arr1.concat(arr2);
+};
+
+console.log(myConcat([1, 2], [3, 4, 5]));
+
+let word = "Joe";
+
+const talker = (word) => "Hello, good afternoon" + word
+talker("hello")
+console.log(talker(" Person" + "  Welcome to JavaScript" ))
+////////////////////////////////////////////////////////////////////
+//logs////////////////////////////////////////////////////
+//////////////////////
+[ 1, 2, 3, 4, 5 ]
+Hello, good afternoon Person  Welcome to JavaScript
+=============================================
+========================================================
+- string interpolation. 
+
+
+const name = "newName" 
+const whateverElse = " or whatever else you would wish"
+console.log(" You can change your name into a " + `${name}` + whateverElse + " .")
+===============================================================
+=============================================================================
+=============================================================
+========================================
+===========================
+====================
+
+
+
+
+
+
+
+
+
+
+
+
+
+==
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

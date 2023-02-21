@@ -1,0 +1,82 @@
+=====================================================================
+ EXTREME IMPORTANCE - PROCEED WITH CAUTION. - 
+================================================
+ SERVER REQUESTS AND PROMISES 
+
+
+
+- this intrdouces the Promise{} Object.
+- the promise Object is used to be used with the 
+.then method. 
+
+the .then method waits until the proise uf fullfilled to complete. 
+ =-=======================================================================================
+
+Creating a server request, with a promise .  Using resolve and reject parameters. 
+
+this , ALSO utilizes a result variable at the end , to display said result.
+--------------------------------------------------------------------------------------------------------------------
+
+Create a promise with resolve and reject
+
+
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to true to represent a successful response from a server
+  let responseFromServer = true;
+	
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {	
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result => {
+  console.log(result);
+});
+
+// We got the data 
+
+========================================================================
+=================================================
+=======================================================
+==============================================================
+=======================================================================
+============================================================================
+======================================================================
+=-------------------------------------------------------------
+=-------------------------------------------------------------
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to false to represent an unsuccessful response from a server
+  let responseFromServer = false;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+
+  }
+});
+
+makeServerRequest.then(result => {
+  console.log(result);
+});
+    makeServerRequest.catch(error => { 
+      console.log("error")
+    }) 
+
+
+===========================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+

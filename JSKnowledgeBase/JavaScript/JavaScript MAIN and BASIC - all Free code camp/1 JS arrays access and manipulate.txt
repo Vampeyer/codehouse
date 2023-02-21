@@ -1,0 +1,214 @@
+Access Multi-Dimensional Arrays With Indexes
+
+const myArray = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14],
+];
+
+const myData = myArray[2][1];
+console.log(myData)
+
+//          logs - 8 
+==========================================
+pop() === " removes end of array " 
+push() === " adds item at end of array placement.  "
+shift() === " removes or removes and declares beginning of array "
+unshift() === " adds item at beginning of array placement.  " 
+
+=================================
+===========================
+===============================================
+*********
+push() pop() shift() and unshift() are all methods that can be declared to 
+an array to move items on the ends of arrays. 
+**********
+==============================================
+** push() and pop() methods work with the wrint of the array while , 
+** shift() and unshift() work with the back of the array. 
+==========================
+==================================
+==========================================
+=====================================================
+push()     -  -   - pushes values to the end of an array. 
+========================================================
+// Setup
+const myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+
+myArray.push("PUSHME")
+myArray.push("PUSH ME TOO ")
+myArray.push("myArray.push")
+myArray.push("will push values")
+myArray.push("at the end", [4], "The rest of the", "array" )
+console.log(myArray)
+///////
+
+[ [ 'John', 23 ],
+  [ 'cat', 2 ],
+  'PUSHME',
+  'PUSH ME TOO ',
+  'myArray.push',
+  'will push values',
+  'at the end',
+  [ 4 ],
+  'The rest of the',
+  'array' ] ]
+  /////////////
+  =======================================================================
+=====================================
+============ - pop()   , method ---========
+===================================
+THE POP METHOD POPS OFF THE LAST VARIABLE AT THE END OF AN ARRAY.========
+________________________________________________ 
+iF A VARIABLE IS DLECLARED WITH THE .POP METHOD , THEN THE 
+"POPPED"
+ VARIABLE CAN BE DECLARED AS A NEW VARIABLE.    array.POP(newVariable) 
+--------
+// Setup
+const myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+
+const removedFromArray =  myArray.pop()
+
+console.log(removedFromArray)
+
+console.log(myArray)
+
+/////
+/////
+/*   
+[ 'cat', 2 ]
+[ [ 'John', 23 ] ]
+ */
+=====================================================================
+pop() method on array example # 2 
+===============================================
+// Setup
+const myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+
+const sampleArr = [1,2,3,4,5,6,7,8,]
+
+
+console.log(sampleArr)
+
+sampleArr.pop() 
+console.log(sampleArr)
+
+sampleArr.pop() 
+console.log(sampleArr)
+
+sampleArr.pop() 
+console.log(sampleArr)
+
+sampleArr.pop() 
+console.log(sampleArr)
+
+sampleArr.pop() 
+console.log(sampleArr)
+
+const theLastTwo = sampleArr.pop()  
+console.log(sampleArr)
+console.log(theLastTwo)
+// in this last one , the array was still popped() off.
+//although , this time was stored in a variable. 
+
+console.log(myArray)
+-----------------------------------------------------------------
+----------------------
+//
+//
+//
+[ 1, 2, 3, 4, 5, 6, 7, 8 ]
+[ 1, 2, 3, 4, 5, 6, 7 ]
+[ 1, 2, 3, 4, 5, 6 ]
+[ 1, 2, 3, 4, 5 ]
+[ 1, 2, 3, 4 ]
+[ 1, 2, 3 ]
+[ 1, 2 ]
+3
+[ [ 'John', 23 ], [ 'cat', 2 ] ]
+
+
+======================================================
+=============================================
+=================================
+=====================
+==== the shift() method removes the first element in an array. 
+
+-- the shift() method can be declared to a variable , from removing the single 
+first element from an array , and can assign that value directly to a variable as 
+shown below. 
+===================
+==================
+==================
+====
+// Setup
+const myArray = [["John", 23], ["dog", 3]];
+
+// Only change code below this line
+
+const sampleArr = [1,2,3,4,5,6,7,8]
+
+console.log(sampleArr)
+
+sampleArr.shift();
+console.log(sampleArr);
+
+sampleArr.shift()
+console.log(sampleArr)
+
+sampleArr.shift() + sampleArr.shift() + sampleArr.shift()
+console.log("why did " + sampleArr + " ?")
+
+console.log("because " + sampleArr[1] + " " + sampleArr[2] + " nine." )
+console.log(sampleArr)
+
+////
+////
+//
+/* 
+[ 1, 2, 3, 4, 5, 6, 7, 8 ]
+[ 2, 3, 4, 5, 6, 7, 8 ]
+[ 3, 4, 5, 6, 7, 8 ]
+why did 6,7,8 ?
+because 7 8 nine.
+[ 6, 7, 8 ]  */
+
+==============================
+===========================
+=========================
+====================
+
+// removing and replacing the first indices in an array 
+// using shift() and unshift()
+const myArray = [["John", 23], ["dog", 3]];
+
+myArray.shift();
+
+console.log(myArray)
+
+myArray.unshift(["Paul, 35"])
+
+console.log(myArray)
+
+  /*
+[ [ 'dog', 3 ] ]
+[ [ 'Paul, 35' ], [ 'dog', 3 ] ] 
+
+ */
+
+
+
+
+
+
+
+
+
+

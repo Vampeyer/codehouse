@@ -1,0 +1,142 @@
+===========================================================
+
+- ES6 import and export - 
+
+-----------------------------
+JavaScript started with a small role to play on
+ an otherwise mostly HTML web. Today, it’s huge,
+ and some websites are built almost entirely with 
+JavaScript. In order to make JavaScript more modular,
+ clean, and maintainable; ES6 introduced a way to easily
+ share code among JavaScript files. This involves exporting
+ parts of a file for use in one or more other files, and 
+importing the parts you need, where you need them. In order 
+to take advantage of this functionality, you need to create a 
+script in your HTML document with a type of module. Here’s an example:
+
+<script type="module" src="filename.js"></script>
+
+A script that uses this module type can now use the
+
+ import and export features you will learn about in the upcoming challenges.
+
+
+===============
+
+ex . - > 
+
+<html>
+  <body>
+    <!-- Only change code below this line -->
+
+<h3> After the ,  type="module " ,  attribute is added into the script
+ element, the JavaScript file is then able to utilize the import and export
+ function </h3>
+
+<script type="module" src="index.js"> </script> 
+    <!-- Only change code above this line -->
+  </body>
+</html>
+===========================================================================================
+=================================================================================
+-----Exporting --- 
+ Use export to Share a Code Block - 
+
+
+===Example -  exporting two functions. in two exporting ways. 
+/////////////////////////////////////////////////////////
+export const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
+
+const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
+
+export { lowercaseString }
+
+//////////////////////////////////////////////////////////
+
+====================================================================
+=============================================================
+====================================================
+==================================================
+importing example - 
+////////////////////////////////////
+import { uppercaseString, lowercaseString } from './string_function.js'
+uppercaseString("hello");
+lowercaseString("WORLD!"); 
+///////////////////////////////////////////////////////////////////
+===================================================
+
+IMPORTANT , importing with * 
+... 
+
+//////////////////////////////////////////
+import * as stringFunctions from "./string_functions.js"
+
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
+////////////////////////////////////////////////////////////////////
+===========================================================
+======================================================================
+=========================================
+********************** - Specific Syntax for Imports and Exports  ***
+==================
+()()()()()()()()()()()()()()()()
+___ DEFAULT EXPORTS AND IMPORTS. 
+
+export default function subtract(x, y) {
+  return x - y;
+}
+////////////////////////////////////////////////////////
+- - - the default import statement however , 
+does not use the curly braces to select functionality. 
+
+
+// - example 
+import subtract from "./math_functions.js";
+
+// Only change code above this line
+
+subtract(7,4);
+=////////////////////////////////////////
+================================
+=====================================
+=============================================
+======================================================
+=============================================================================
+
+==============================================
+========================================
+====================================
+=======================
+======
+
+
+
+
+
+
+
+
+
+============================================================================
+==========================================================================
+=================================
+=
+======================================================================
+=================================================================================
+===============================================================================================
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+
+// example  // 
+const exampleObject = { 
+         key1: "value1",  
+	 key2: "value2", 
+	key3: " value3"
+} 
+
+console.log(exampleObject.key1)   // logs out "value1"  , 
+exampleObject.key1 = "newValue"
+////////////////////////////////////////
+console.log(exampleObject.key2[5])    //// === "2" 
+
+
+
+console.log(exampleObject)   
+/////////////////////////
+//{ 
+         key1: "newValue",  
+	 key2: "value2", 
+	key3: " value3"
+} 
+///////////////////////////
+
+if you do 
+
+delete exampleObject.key1 
+
+then  {
+	 key2: "value2", 
+	key3: " value3"3
+} 
+
+
+//////////object manipulation using construction. 
+
+console.log("Yellow World")
+
+const o = Object()
+o.newKey = "newValue"
+console.log(o)
+
+Yellow World
+{ newKey: 'newValue' }
+------------------------------------------
+
